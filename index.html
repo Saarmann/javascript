@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+let sum = 0;
+
+function myNumbersList() {
+    // let number = prompt("insert your number");
+    let number;
+    let array = [];
+
+    while(number != 0) {
+        number = prompt("insert your number");
+        array.push(number);
+    }
+}
+
+function averageValue(array){
+        for (let i=0; i<array.length; i++){
+            sum = sum + parseInt(array[i]);
+        
+        }
+        return average = sum / parseInt(array.length-1);
+}
+
+function minValue(array){
+
+    let minimumValue = parseInt(array[0]);
+
+    for(let i=1; i<array.length;i++) {
+        if (parseInt(array[i]) < minimumValue) {
+            minimumValue = parseInt(array[i]);
+            }
+        } 
+        return minimumValue;
+}
+
+function maxValue(array) {
+    let maximumValue = parseInt(array[0]);
+    for (let i=1; i<array.length; i++) {
+        if(parseInt(array[i]) > maximumValue){
+            maximumValue = parseInt(array[i]);
+        }
+    }
+    return maximumValue;
+}    
+       
+alert(maxValue());
+alert(minValue());
+alert(averageValue(array));
+alert(array);
+
+
+</script>
+
+
+</body>
+</html>
