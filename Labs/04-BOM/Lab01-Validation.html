@@ -76,22 +76,22 @@
 				
 					<label for="txtName">Name (Mandatory)</label>
 					<input type="text" id="txtName" class="span6" value="" onblur="validateInputName()"  />	
-					<span id="txtError" style="visibility: hidden;"  class="alert alert-error"><strong>Error!</strong> Not a Number</span>	
+					<span id="txtError" style="visibility: hidden;"  class="alert alert-error"><strong>Error!</strong> Insert full name!</span>	
 					<div class="separator"></div>
 						
 					<label for="txtAge">Age</label>
-					<input type="text" id="txtAge" class="error span6" value="" placeholder="A text in place of a number..">
-					<span class="alert alert-error"><strong>Error!</strong> Not a Number</span>				
+					<input type="text" id="txtAge" class="error span6" value="" placeholder="A text in place of a number.." onblur="validateAge()">
+					<span id="ageError" style="visibility: hidden;" class="alert alert-error"><strong>Error!</strong> Not a Number</span>				
 					<div class="separator"></div>
 					
 					<label for="txtEmail">Email (Mandatory)</label>
-					<input type="text" id="txtEmail" class="span6" value=""  />	
-					<span id="emailError" style="visibility: hidden;"  class="alert alert-error"><strong>Error!</strong> Not a Number</span>	
+					<input type="text" id="txtEmail" class="span6" value="" onblur="validateEmail()" />	
+					<span id="emailError" style="visibility: hidden;"  class="alert alert-error"><strong>Error!</strong> Insert Email address!</span>	
 					<div class="separator"></div>
 					
 					<label for="txtPassword">Password (Mandatory)</label>
-					<input type="text" id="txtPassword" class="span6" value=""  />	
-					<span id="passwordError" style="visibility: hidden;"  class="alert alert-error"><strong>Error!</strong> Not a Number</span>	
+					<input type="text" id="txtPassword" class="span6" value="" onblur="validatePassword()" />	
+					<span id="passwordError" style="visibility: hidden;"  class="alert alert-error"><strong>Error!</strong> Insert password!</span>	
 					<div class="separator"></div>
 					
 					<label for="txtRepeatPassword">Repeat Password (Mandatory)</label>
