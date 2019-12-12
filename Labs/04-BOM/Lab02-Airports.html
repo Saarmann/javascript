@@ -22,12 +22,12 @@
 	<!-- resources/theme -->
 	<link rel="stylesheet" href="assets/style.min.css" />
 	
-	<script src="Lab02-AirportData.js"></script>
+	<script src="Lab02-AirportsData.js"></script>
 	<script src="Lab02-Airports.js"></script>
 	
 	
 </head>
-<body>
+<body onload="setDeparture()"> 
 	
 	<!-- Start Content -->
 	<div class="container-fluid fixed">
@@ -64,6 +64,7 @@
 				<div class="span9">
 					<label for="txtName">Departure</label>
 					<select style="width: 200px;" id="slcDepartures">
+					
 					</select>
 					<div class="separator"></div>
 					
@@ -83,7 +84,7 @@
 </div> <!-- end Content -->
 	
 </div>		
-	
+
 	
 </body>
 </html>

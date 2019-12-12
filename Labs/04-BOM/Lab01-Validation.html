@@ -76,47 +76,47 @@
 				
 					<label for="txtName">Name (Mandatory)</label>
 					<input type="text" id="txtName" class="span6" value="" onblur="validateInputName()"  />	
-					<span id="txtError" style="visibility: hidden;"  class="alert alert-error"><strong>Error!</strong> Insert full name!</span>	
+					<span id="txtError" style="visibility: hidden"  class="alert alert-error"><strong>Error!</strong> Insert full name!</span>	
 					<div class="separator"></div>
 						
 					<label for="txtAge">Age</label>
-					<input type="text" id="txtAge" class="error span6" value="" placeholder="A text in place of a number.." onblur="validateAge()">
-					<span id="ageError" style="visibility: hidden;" class="alert alert-error"><strong>Error!</strong> Not a Number</span>				
+					<input type="text" id="txtAge" class="span6" value=""  onblur="validateAge()">
+					<span id="ageError" style="visibility: hidden" class="alert alert-error"><strong>Error!</strong> Has to be a positive number</span>				
 					<div class="separator"></div>
 					
 					<label for="txtEmail">Email (Mandatory)</label>
 					<input type="text" id="txtEmail" class="span6" value="" onblur="validateEmail()" />	
-					<span id="emailError" style="visibility: hidden;"  class="alert alert-error"><strong>Error!</strong> Insert Email address!</span>	
+					<span id="emailError" style="visibility: hidden"  class="alert alert-error"><strong>Error!</strong> Insert Email address!</span>	
 					<div class="separator"></div>
 					
 					<label for="txtPassword">Password (Mandatory)</label>
 					<input type="text" id="txtPassword" class="span6" value="" onblur="validatePassword()" />	
-					<span id="passwordError" style="visibility: hidden;"  class="alert alert-error"><strong>Error!</strong> Insert password!</span>	
+					<span id="passwordError" style="visibility: hidden"  class="alert alert-error"><strong>Error!</strong> Insert password!</span>	
 					<div class="separator"></div>
 					
 					<label for="txtRepeatPassword">Repeat Password (Mandatory)</label>
-					<input type="text" id="txtRepeatPassword" class="span6" value=""  />	
-					<span id="repeatPasswordError" style="visibility: hidden;"  class="alert alert-error"><strong>Error!</strong> Not a Number</span>		
+					<input type="text" id="txtRepeatPassword" class="span6" value="" onblur="validateRepeatPassword()" />	
+					<span id="repeatPasswordError" style="visibility: hidden"  class="alert alert-error"><strong>Error!</strong> Repeat password!</span>		
 					<div class="separator"></div>
 					
 					<label for="txtIdCode">Id Code</label>
-					<input type="text" id="txtIdCode" class="span6" value=""  />	
-					<span id="idCodeError" style="visibility: hidden;"  class="alert alert-error"><strong>Error!</strong> Not a Number</span>	
+					<input type="text" id="txtIdCode" class="span6" value="" onblur="validateId()" />	
+					<span id="idCodeError" style="visibility: hidden"  class="alert alert-error"><strong>Error!</strong> Not a Number</span>	
 					<div class="separator"></div>
 					
 					<label for="txtEvenNumber">Even Number</label>
-					<input type="text" id="txtEvenNumber" class="span6 valid" value="4"  />	
-					<span id="evenNumberError" style="visibility: hidden;"  class="alert alert-error"><strong>Error!</strong> Not a Number</span>	
+					<input type="text" id="txtEvenNumber" class="span6" value="" onblur="validateEvenNumber()" />	
+					<span id="evenNumberError" style="visibility: hidden"  class="alert alert-error"><strong>Error!</strong> Not a even number</span>	
 					<div class="separator"></div>
 					
 					<label for="txtCreditCard">Credit Card</label>
-					<input type="text" id="txtCreditCard" class="span6" value=""  />	
-					<span id="credidCardError" style="visibility: hidden;"  class="alert alert-error"><strong>Error!</strong> Not a Number</span>	
+					<input type="text" id="txtCreditCard" class="span6" value="" onblur="validateCreditCard()" />	
+					<span id="credidCardError" style="visibility: hidden"  class="alert alert-error"><strong>Error!</strong> Not a Number</span>	
 					<div class="separator"></div>
 					
 					<label for="txtIsbn">ISBN (13 digits)</label>
-					<input type="text" id="txtIsbn" class="span6" value=""  />	
-					<span id="isBnError" style="visibility: hidden;"  class="alert alert-error"><strong>Error!</strong> Not a Number</span>	
+					<input type="text" id="txtIsbn" class="span6" value="" onblur="validateIsbn()" />	
+					<span id="isBnError" style="visibility: hidden"  class="alert alert-error"><strong>Error!</strong> Not a Number</span>	
 					<div class="separator"></div>
 					
 					
@@ -124,7 +124,7 @@
 					<br/>
 					<br/>
 					<div class="buttons pull-right">						
-						<a href="" class="btn btn-primary btn-icon glyphicons ok_2"><i></i> Save</a>
+						<a href="" id="saveButton" class="btn btn-primary btn-icon glyphicons ok_2" onclick="saveButton()"><i></i> Save</a>
 						<a href="" class="btn btn-default btn-icon glyphicons share"><i></i> Cancel</a>
 					</div>				
 				

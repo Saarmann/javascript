@@ -45,5 +45,37 @@ airports[5]={
 	
 	
 	
-	
+function departurePlaces(airports){
 
+	let departures = [];
+
+	for(let i = 0; i< airports.length; i++){
+
+		departures.push(airports[i].departure);
+
+	}
+	console.log(departures)
+}
+
+function setDeparture() {
+    
+    var myAirports = ["1","2","3","4","5"];
+    let options = "<option value='0'></option>";
+
+    for(let i=0; i < myAirports.length; i++) {
+
+        options += "<option value="+"myAirports[i]"+">"+myAirports[i]+"</option>";
+
+
+    }
+        document.getElementById("slcDepartures").innerHTML = options;
+
+}
+
+// function myAirport (){
+	
+// 	let cities = [];
+
+// 	for (let i = 0; i < departures.length
+
+// }
