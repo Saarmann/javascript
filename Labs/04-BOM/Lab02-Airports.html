@@ -27,7 +27,7 @@
 	
 	
 </head>
-<body onload="setDeparture()"> 
+<body onload="getDepartureCity()"> 
 	
 	<!-- Start Content -->
 	<div class="container-fluid fixed">
@@ -63,7 +63,7 @@
 				</div>
 				<div class="span9">
 					<label for="txtName">Departure</label>
-					<select style="width: 200px;" id="slcDepartures">
+					<select style="width: 200px;" id="slcDepartures" onchange="destinations()">
 					
 					</select>
 					<div class="separator"></div>

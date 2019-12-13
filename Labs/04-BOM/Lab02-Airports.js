@@ -1,23 +1,38 @@
 alert ("Implement solution in Airports.js script");
 
 
-function setDeparture() {
-    
+function getDepartureCity() {
 
-    let airports = ["1","2","3","4","5"];
+	let myAirports = [];
+	let options = "<option value='0'></option>";
 
-    let options = "<option value='0'></option>";
+	for(let i = 0; i < airports.length; i++){
+	
+		myAirports.push(airports[i].departure);
+		options += "<option value="+myAirports[i]+">"+myAirports[i]+"</option>";
+	}
 
-    for(i=0; i < airports.length; i++) {
-
-        options += "<option value="+"airports[i]"+">"+airports[i]+"</option>";
-
-
-    }
-        document.getElementById("slcDepartures").innerHTML = options;
+	document.getElementById("slcDepartures").innerHTML = options;
 
 }
 
+
+function destinations() {
+
+    let departureCity = document.getElementById("slcDepartures").value;
+    let index = airports.findIndex(x => x.departure === departureCity);
+
+    let destinations = [];
+    let destinationOptions = "<option value='0'></option>";
+
+    for (let i = 0; i < airports[index].destinations.length; i++) {
+        
+        destinations.push(airports[index].destinations[i]);
+        destinationOptions += "<option value="+destinations[i]+">"+destinations[i]+"</option>";
+    
+    }
+    document.getElementById("slcDestinations").innerHTML = destinationOptions;
+}
 
 
 
