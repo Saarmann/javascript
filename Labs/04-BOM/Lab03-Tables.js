@@ -4,9 +4,7 @@ alert ("Test data connected: OrderNo: "+shipments[0].orderNo);
 function loadTable() {
 
 let myTable = document.getElementById("myTable");
-const buttons = "<a href=\"#\" class=\"btn-action glyphicons eye_open btn-info\"><i></i></a>
-                <a href=\"#\" class=\"btn-action glyphicons pencil btn-success\"><i></i></a>
-                <a href=\"#\" class=\"btn-action glyphicons remove_2 btn-danger\"><i></i></a>"
+const buttons = "<a href=\"#\" class=\"btn-action glyphicons eye_open btn-info\"><i></i></a><a href=\"#\" class=\"btn-action glyphicons pencil btn-success\"><i></i></a><a href=\"#\" class=\"btn-action glyphicons remove_2 btn-danger\"><i></i></a>"
 
 var columns = [];
 for (let i = 0; i < shipments.length; i++) {
@@ -26,17 +24,18 @@ let tableRow = myTable.insertRow();
         tableRow = myTable.insertRow();
 
         // fill cells in table
-        for(let j = 0; j < (columns.length); j++ ) {
-        let tableCell = tableRow.insertCell();
-        if(j == columns.length) {
-            tableCell.innerHTML = buttons;
-        } else {
-            tableCell.innerHTML = shipments[i][columns[j]];
-        }            
+        for(let j = 0; j < (columns.length+1); j++ ) {
+            let tableCell = tableRow.insertCell();
+            if(j == columns.length) {
+                tableCell.innerHTML = buttons;
+            } else {
+                tableCell.innerHTML = shipments[i][columns[j]];
+            }            
        
-    }
-    
-}    
+        }
+          
+    }    
+
 
 }
 
