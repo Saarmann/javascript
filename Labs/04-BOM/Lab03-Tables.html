@@ -26,7 +26,7 @@
 	<script src="Lab03-Tables.js"></script>	
 	
 </head>
-<body>
+<body onload="loadTable(shipments)">
 	
 	<!-- Start Content -->
 	<div class="container-fluid fixed">
@@ -59,20 +59,23 @@
 				<div class="row-fluid">
 			
 				<div class="span12">					
-					<table class="table table-bordered table-condensed table-striped table-primary table-vertical-center checkboxs">
+					<table id="myTable" class="table table-bordered table-condensed table-striped table-primary table-vertical-center checkboxs">
 					<thead>
 						<tr>
 							<th class="center">Order No</th>
 							<th class="center">Date</th>
-							<th>Customer</th>
+							<th class="center">Customer</th>
 							<th class="center">Tracking No</th>
 							<th class="center">Status</th>
 							<th class="center">Consignee</th>
 							<th class="center" style="width: 90px;">Actions</th>
 						</tr>
 					</thead>
-					<tbody>
-						<tr class="selectable">
+					<tbody id="tableBody">
+
+
+
+						<!-- <tr class="selectable">
 							<td class="center">OS5434342342334</td>
 							<td class="center">01/04/2015</td>
 							<td class="center">A Shipper Name</td>								
@@ -123,7 +126,7 @@
 								<a href="#" class="btn-action glyphicons pencil btn-success"><i></i></a>
 								<a href="#" class="btn-action glyphicons remove_2 btn-danger"><i></i></a>
 							</td>
-						</tr>
+						</tr> -->
 					</tbody>
 				</table>
 				
