@@ -75,7 +75,7 @@ function firstPage() {
 function clearTable() {
     let myTable = document.getElementById("myTable");
     let rowCount = myTable.rows.length;
-    while (rowCount > 1) { // if put to 0 deletes also table heads. 
+    while (rowCount > 1) { // if set to 0 deletes also table heads. 
         myTable.deleteRow(1);
     }
     
